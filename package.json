@@ -1,0 +1,43 @@
+{
+  "name": "<insert your package name here>",
+  "version": "<insert your package version here>",
+  "description": "<insert your description here>",
+  "author": "<name> <<email>> (<url>)",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "<insert your keywords here>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "<insert your repository url here>"
+  },
+  "homepage": "<insert your homepage url here>",
+  "bugs": {
+    "url": "<insert your issues url here>"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc -p tsconfig.types.json"
+  },
+  "type": "module",
+  "exports": {
+    "default": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "vue": "^3.4.37",
+    "vue-tsc": "^2.0.29"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
+  }
+}
